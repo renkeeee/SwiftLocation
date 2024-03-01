@@ -59,7 +59,7 @@ final class LocationDelegate: NSObject, CLLocationManagerDelegate {
     
     // MARK: - Heading Updates
     
-    #if os(iOS)
+    #if !os(tvOS)
     func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
         asyncBridge?.dispatchEvent(.didUpdateHeading(newHeading))
     }

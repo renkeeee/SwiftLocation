@@ -92,7 +92,7 @@ public protocol LocationManagerProtocol {
     func stopMonitoringSignificantLocationChanges()
     #endif
     
-    #if os(iOS)
+   #if !os(tvOS)
     // MARK: - Getting Heading
 
     func startUpdatingHeading()

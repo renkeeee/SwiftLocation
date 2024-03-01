@@ -384,7 +384,7 @@ public final class Location {
     }
     #endif
     
-    #if os(iOS)
+    #if !os(tvOS)
     // MARK: - Monitor Device Heading Updates
     
     /// Starts monitoring heading changes.

@@ -26,7 +26,7 @@
 import Foundation
 import CoreLocation
 
-#if os(iOS)
+#if !os(tvOS)
 extension Tasks {
     
     public final class HeadingMonitoring: AnyTask {

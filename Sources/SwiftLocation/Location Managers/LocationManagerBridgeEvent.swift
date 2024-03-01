@@ -60,7 +60,7 @@ public enum LocationManagerBridgeEvent {
     
     // MARK: - Headings
     
-    #if os(iOS)
+    #if !os(tvOS)
     case didUpdateHeading(_ heading: CLHeading)
     #endif
     
